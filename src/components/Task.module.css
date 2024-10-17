@@ -1,0 +1,71 @@
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  padding: 1.6rem;
+  margin-bottom: 0.8rem;
+
+  .checkbox{
+   position: relative;
+
+    > input {
+      position: absolute;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+
+    > button {
+      background-color: transparent;
+      border: 2px solid var(--blue);
+      border-radius: 999px;
+      color: var(--gray-300);
+      cursor: pointer;
+      line-height: 0;
+
+      svg {
+        opacity: 0;
+      }
+    }
+  }
+
+  > button {
+    background-color: transparent;
+    border: none;
+    color: var(--gray-300);
+    cursor: pointer;
+    line-height: 0;
+  }
+}
+.taskCompleted{
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+.checkboxWithCheck{
+  position: relative;
+  
+    > input {
+      position: absolute;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+
+    > button {
+      background-color: transparent;
+      border: 2px solid var(--purple);
+      border-radius: 999px;
+      color: var(--gray-300);
+      cursor: pointer;
+      line-height: 0;
+      background-color: var(--purple);
+
+      svg {
+        opacity: 1;
+        color: var(--gray-100);
+      }
+    }
+}
